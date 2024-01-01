@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+#main {
+    transition: margin-right .5s;
+}
+  
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.topnav {
+    overflow: hidden;
+    width: 94%;
+    z-index: 1;
+}
+
+.topnav a {
+    float: right;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 20px 3%;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    color: white;
+}
+
+.topnav a.active {
+    color: white;
+}
+
+.active {
+    margin-right: 60px;
+}
+
+hr {
+    position: absolute;
+    top: 60px;
+    right: 6%;
+    width: 88%;
+}
+
+.logo {
+    padding: 19px 0 !important;
+    margin-left: 100px;
+    position: absolute;
+}
+
+.menu {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    right: 7%;
+    margin-top: 15px;
+    display: block;
+    position: absolute;
+}
+
+.image {
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+    width: 70%;
+}
+
+.lable {
+    font-size: 40px;
+    direction: rtl;
+    margin-right: 15%;
+    margin-top: 40px;
+}
+
+.desc {
+    font-size: 24px;
+    direction: rtl;
+    width: 70%;
+    text-align: right;
+    margin-left: 15%;
+    line-height: 1.8;
+}

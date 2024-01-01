@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Manrope', sans-serif; */
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+#main {
+    transition: margin-right .5s;
+}
+  
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.menu {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    right: 1.5%;
+    margin-top: 15px;
+    display: block;
+    position: absolute;
+}
+
+.header {
+    display: block;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.back {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    display: block;
+    object-fit: cover;
+}
+
+.front {
+    /* background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.7543122962075455) 0%, rgba(0,0,0,0.39576887884059875) 6%, rgba(0,0,0,0.502211455871411) 40%, rgba(0,0,0,0.7206988508293943) 60%); */
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 70%);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: block;
+}
+
+.topnav {
+    overflow: hidden;
+    position: absolute;
+    width: 94%;
+    z-index: 1;
+}
+
+.topnav a {
+    float: right;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 20px 3%;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    color: white;
+}
+
+.topnav a.active {
+    color: white;
+}
+
+.active {
+    margin-right: 60px;
+}
+
+hr {
+    position: absolute;
+    top: 60px;
+    right: 6%;
+    width: 88%;
+}
+
+.logo {
+    padding: 19px 0 !important;
+    margin-left: 100px;
+    position: absolute;
+}
+
+.foreground {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.texts {
+    color: white;
+    position: absolute;
+    right: 6%;
+    top: 21%;
+    direction: rtl;
+}
+
+.lable {
+    font-size: 65px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    width: 35%;
+    margin-left: auto;
+    line-height: 1.4;
+}
+
+.desc {
+    text-align: right;
+    width: 35%;
+    margin-left: auto;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.selections {
+    width: 150px;
+    display: flex;
+    margin-left: auto;
+    margin-top: 80px;
+}
+
+.selection {
+    width: 35px;
+    height: 2.5px;
+    background-color: white;
+    transition: all .2s linear;
+}
+
+.selected {
+    width: 55px;
+    background-color: red;
+}
+
+.selection_button {
+    border: none;
+    padding: none;
+    background-color: transparent;
+    margin: none;
+}
+
+.slider_button {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.75);
+    border: none;
+    padding: none;
+    z-index: 1;
+    position: absolute;
+    top: 30%;
+    left: 3%;
+    cursor: pointer;
+}
+
+.slider_button:hover {
+    color: white;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .6} 
+    to {opacity: 1}
+}
+
+.items {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.652);
+}
+
+.items_list {
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.gallery {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 60px;
+    padding-top: 60px;
+    color: white;
+}
+
+.parallax1 {
+    background-image: url('../images/info/images/IMG_7669.JPG');
+    height: 100vh; 
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item {
+    height: 65vh;
+    width: 22%;
+    background-color: rgb(25, 25, 25);
+    margin-top: auto;
+    margin-bottom: auto;
+    display: block;
+}
+
+.item_lable {
+    color: white;
+    direction: rtl;
+    margin: 8px 0;
+    margin-right: 20px;
+    transition: all .1s linear;
+}
+
+.item_desc {
+    color: white;
+    direction: rtl;
+    margin: 0 20px;
+    font-size: 15px;
+    transition: all .1s linear;
+}
+
+.item_image {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    transition: all .2s linear;
+}
+
+.item_action {
+    width: 100%;
+    height: 60px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.811);
+    margin-bottom: 0;
+    padding: 0;
+    margin-top: 10px;
+    font-size: 16px;
+    transition: all .1s linear;
+}
+
+.item_image:hover {
+    height: 100%;
+}
+
+.item_image:hover ~ .item_desc {
+    opacity: 0;
+}
+
+.item_image:hover ~ .item_lable {
+    opacity: 0;
+}
+
+.item_image:hover ~ .item_action {
+    opacity: 0;
+}
+
+.action_button {
+    display: block;
+    margin-left: auto;
+    border: none;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    width: 180px;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.action_button:hover {
+    background-color: black;
+    color: white;
+}
+
+.section1 {
+    display: flex;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.topic_image {
+    height: 100vh;
+}
+
+.topic_contents_1 {
+    text-align: right;
+    margin-top: 120px;
+    margin-right: 200px;
+    direction: rtl;
+}
+
+.topic {
+    font-size: 35px;
+}
+
+.description {
+    width: 70%;
+    margin-left: auto;
+    font-size: 17px;
+}
+
+.action {
+    border: none;
+    font-size: 16px;
+    width: 120px;
+    height: 40px;
+    border-radius: 50px;
+    margin-right: auto;
+    display: block;
+    margin-left: 33%;
+}
+
+.topic_contents_1 {
+    text-align: right;
+    margin-top: 120px;
+    margin-right: 200px;
+}
+
+.section2 {
+    display: flex;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7)
+}
+
+.parallax2 {
+    background-image: url('../images/info/images/IMG_7814.JPG');
+    height: 100vh; 
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.topic_contents_2 {
+    text-align: right;
+    margin-top: 120px;
+    margin-right: 200px;
+    direction: rtl;
+}
+
+.section3 {
+    display: flex;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.topic_contents_3 {
+    text-align: right;
+    margin-top: 120px;
+    margin-right: 200px;
+    direction: rtl;
+}
+
+.section4 {
+    display: flex;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7)
+}
+
+.topic_contents_4 {
+    text-align: right;
+    margin-top: 120px;
+    margin-right: 200px;
+    direction: rtl;
+}
+
+.parallax {
+    background-image: url('../images/info/images/IMG_7677.JPG');
+    height: 100vh; 
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    justify-content: space-evenly;
+}
+
+.links {
+    display: block;
+    direction: rtl;
+}
+
+.links a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+}
+
+.copyright {
+    margin-top: auto;
+    color: rgba(255, 255, 255, 0.683);
+}
+
+.splide_slider {
+    height: 100vh;
+    background-color: rgb(25, 25, 25);
+}
+
+.splide__track {
+    padding: 22vh;
+}
+
+.splid_item {
+    display: flex;
+    width: 40vw;
+    height: 40vh;
+    background-color: white;
+    color: white;
+}
+
+.splide_image {
+    width: 20vw;
+    height: 40vh;
+    object-fit: cover;
+    margin-right: 80px;
+    margin-top: 50px;
+}
+
+.splide__track {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
