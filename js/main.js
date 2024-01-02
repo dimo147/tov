@@ -3,6 +3,9 @@ var splide = new Splide( '.splide', {
     drag   : 'free',
     snap   :  true,
     autoWidth: true,
+    classes: {
+		arrows: 'splide__arrows',
+    },
 });
 
 splide.mount();

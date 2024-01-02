@@ -8,59 +8,6 @@ body {
     font-family: 'Vazirmatn', sans-serif;
 }
 
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    right: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-  
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-  
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-  
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-  
-#main {
-    transition: margin-right .5s;
-}
-  
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
-
-.menu {
-    font-size: 30px;
-    cursor: pointer;
-    color: white;
-    right: 1.5%;
-    margin-top: 15px;
-    display: block;
-    position: absolute;
-}
-
 .header {
     display: block;
     position: relative;
@@ -100,15 +47,20 @@ body {
     position: absolute;
     width: 94%;
     z-index: 1;
+    height: 100vh;
 }
 
 .topnav a {
     float: right;
     color: #e0e0e0;
-    text-align: center;
+    text-align: right;
     padding: 20px 3%;
     text-decoration: none;
     font-size: 17px;
+}
+
+.ot {
+    padding: 0 3% !important;
 }
 
 .topnav a:hover {
@@ -119,10 +71,73 @@ body {
     color: white;
 }
 
-.active {
-    margin-right: 60px;
+
+nav {
+	text-align: right;
 }
 
+nav ul ul {
+	display: none;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul {
+	list-style: none;
+	position: relative;
+	display: inline;
+}
+
+nav ul li {
+    float: right;
+}
+
+nav ul li:hover a {
+    color: #fff;
+}
+
+nav ul li a {
+    display: block;
+    color: #757575;
+    text-decoration: none;
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+		
+nav ul ul {
+    background: #5f6975;
+    padding: 0;
+    position: absolute;
+    margin-top: 40px;
+    top: 100%;
+}
+
+nav ul ul li {
+    float: none; 
+    width: 150px;
+    height: 60px;
+    position: relative;
+}
+
+nav ul ul li a {
+    color: #fff;
+    width: 142px;
+    height: 30px;
+}
+
+nav ul ul li a:hover {
+    background: #4b545f;
+}
+		
+nav ul ul ul {
+    position: absolute;
+    right: 100%;
+    top: 0;
+}
+		
 hr {
     position: absolute;
     top: 60px;
@@ -132,8 +147,6 @@ hr {
 
 .logo {
     padding: 19px 0 !important;
-    margin-left: 100px;
-    position: absolute;
 }
 
 .foreground {
@@ -148,6 +161,7 @@ hr {
     right: 6%;
     top: 21%;
     direction: rtl;
+    width: 100%;
 }
 
 .lable {
@@ -156,14 +170,14 @@ hr {
     margin: 0;
     padding: 0;
     text-align: right;
-    width: 35%;
+    width: 500px;
     margin-left: auto;
     line-height: 1.4;
 }
 
 .desc {
     text-align: right;
-    width: 35%;
+    width: 500px;
     margin-left: auto;
     font-size: 18px;
     line-height: 1.7;
@@ -203,7 +217,7 @@ hr {
     z-index: 1;
     position: absolute;
     top: 30%;
-    left: 3%;
+    left: 10%;
     cursor: pointer;
 }
 
@@ -465,26 +479,159 @@ footer {
 
 .splide__track {
     padding: 22vh;
-}
-
-.splid_item {
-    display: flex;
-    width: 40vw;
-    height: 40vh;
-    background-color: white;
-    color: white;
-}
-
-.splide_image {
-    width: 20vw;
-    height: 40vh;
-    object-fit: cover;
-    margin-right: 80px;
-    margin-top: 50px;
-}
-
-.splide__track {
     margin-left: 70px;
     margin-right: 70px;
 }
 
+.splide_item {
+    display: flex;
+    width: 700px;
+    height: 40vh;
+    background-color: white;
+    color: white;
+    margin-right: 50px;
+}
+
+.splide_image {
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+}
+
+.splide_texts {
+    color: black;
+    text-align: right;
+    direction: rtl;
+    width: 100%;
+}
+
+.splide_texts h2 {
+    margin-right: 25px;
+}
+
+.splide_texts p {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+@media only screen and (max-width: 500px) {
+    .slider_button {
+        display: none;
+    }
+    .lable {
+        width: 100%;
+        font-size: 40px;
+    }
+    .desc {
+        width: 90%;
+        margin-top: 30px;
+        font-size: 18px;
+    }
+    .front {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    .topnav a {
+        float: left;
+        display: none;
+    }
+    .logo {
+        display: block !important;
+        margin-left: 10px;
+    }
+    .action_button {
+        margin-top: 60px;
+    }
+    .section1 {
+        display: block;
+        padding-bottom: 40px;
+    }
+    .topic_image {
+        width: 100vw;
+        height: auto !important;
+    }
+    .topic_contents_1 {
+        margin-top: 20px;
+        margin-right: 10%;
+    }
+    .description {
+        width: 90%;
+    }
+    .section2 {
+        flex-direction: column-reverse;
+        padding-bottom: 40px;
+    }
+    .topic_contents_2 {
+        margin-top: 20px;
+        margin-right: 10%;
+    }
+    .section3 {
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+    .topic_contents_3 {
+        margin-top: 20px;
+        margin-right: 10%;
+    }
+    .section4 {
+        flex-direction: column-reverse;
+        padding-bottom: 40px;
+    }
+    .topic_contents_4 {
+        margin-top: 20px;
+        margin-right: 10%;
+    }
+    .items {
+        height: auto !important;
+    }
+    .items_list {
+        display: block;
+    }
+    .items {
+        padding-bottom: 80px;
+    }
+    .item {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 80px;
+    }
+    .gallery {
+        margin-bottom: 0;
+    }
+    .parallax1 {
+        height: auto !important;
+    }
+    .parallax2 {
+        height: auto !important;
+    }
+    .parallax {
+        height: auto !important;
+    }
+    .action {
+        margin-left: 10%;
+        margin-top: 30px;
+    }
+    .splide__track {
+        margin: 0;
+    }
+    .splide_item {
+        height: 250px;
+        width: 90vw;
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+    .splide__arrows {
+        display: none;
+    }
+    .splide_texts p {
+        font-size: 14px;
+        margin: 0;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .splide_texts h2 {
+        margin: 10px 0;
+        margin-right: 5px;
+        font-size: 20px;
+    }
+}

@@ -8,50 +8,6 @@ body {
     font-family: 'Vazirmatn', sans-serif;
 }
 
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    right: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-  
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-  
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-  
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-  
-#main {
-    transition: margin-right .5s;
-}
-  
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
-
 .topnav {
     overflow: hidden;
     width: 94%;
@@ -75,10 +31,6 @@ body {
     color: white;
 }
 
-.active {
-    margin-right: 60px;
-}
-
 hr {
     position: absolute;
     top: 60px;
@@ -88,39 +40,43 @@ hr {
 
 .logo {
     padding: 19px 0 !important;
-    margin-left: 100px;
-    position: absolute;
-}
-
-.menu {
-    font-size: 30px;
-    cursor: pointer;
-    color: white;
-    right: 7%;
-    margin-top: 15px;
-    display: block;
-    position: absolute;
 }
 
 .image {
     display: block;
     margin: auto;
     margin-top: 80px;
-    width: 70%;
+    height: 55vh;
 }
 
 .lable {
-    font-size: 40px;
+    font-size: 38px;
     direction: rtl;
-    margin-right: 15%;
-    margin-top: 40px;
+    margin-right: 40px;
+    margin-top: 80px;
+}
+
+.sdesc {
+    text-align: right;
+    direction: rtl;
+    margin-right: 40px;
+    font-size: 20px;
+    line-height: 2;
 }
 
 .desc {
-    font-size: 24px;
+    font-size: 20px;
     direction: rtl;
-    width: 70%;
+    width: 80%;
     text-align: right;
-    margin-left: 15%;
-    line-height: 1.8;
+    margin-left: 10%;
+    line-height: 2;
+    margin-top: 80px;
 }
+
+header {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
