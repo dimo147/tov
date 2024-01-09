@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+.texts {
+    margin: 80px 10%;
+}
+
+.title {
+    direction: rtl;
+}
+
+.desc {
+    direction: rtl;
+}
+
+.down {
+    background-color: rgb(25, 25, 25);
+}
+
+.splide__image {
+    height: 30vh;
+    margin-right: 40px;
+    border-radius: 10px;
+}
+
+.splide__track {
+    margin-right: 70px;
+    margin-left: 70px;
+    padding-top: 40px;
+}
+
+footer {
+    display: flex;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    justify-content: space-evenly;
+}
+
+.links {
+    display: block;
+    direction: rtl;
+}
+
+.links a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+}
+
+.copyright {
+    margin-top: auto;
+    color: rgba(255, 255, 255, 0.683);
+}

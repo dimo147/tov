@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="/css/about.css">
+</head>
+<body>
+    <div class="texts">
+        <h1 class="title">درباره ما</h1>
+        <p class="desc">
+            گروه طراحی و صنعتی تاو در سال 1380 تاسیس شد . ما در طراحی ، توسعه و ساخت و نصب سازه های فلزی اعم از دکل های مخابراتی/ پایه های روشنایی/ مبلمان شهری/ پایه هایی حفاظتی و نظارتی و ... تخصص داریم .
+            <br>
+            <br>
+            نقطه قوت گروه صنعتی ما این است که کل طراحی،ساخت،آزمایش و گالوانیزه را انجام می دهد و تمام فرآیند تولید با رعایت استاندارد های بین المللی و با بهره مندی از مهندسین خبره انجام میشود.
+            <br>
+            <br>
+            تعهد کامل گروه ما به عرضه با کیفیت ما را از رقابت جدا نموده و از نتایج این امر برقراری موثر با مشتریان و پوشش دهی سلایق مختلف در ظرافت و دقت و تمیزی سازه های ساخته شده اشاره کرد.
+        </p>
+    </div>
+    <div class="down">
+        <div class="splide_slider">
+            <section class="splide" aria-label="gallery">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img class="splide__image" src="images/background.jpeg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="splide__image" src="images/background2.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="splide__image" src="images/Dulwich-26.webp" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="copyright">
+                Copyright © 2023 Tov
+            </div>
+            <div></div>
+            <div class="numbers">
+                <h4>شماره های تماس</h4>
+                <p>021-1237659</p>
+                <p>021-1237659</p>
+                <p>021-1237659</p>
+            </div>
+            <div class="links">
+                <h4>لینک ها</h4>
+                <a href="#">ارتباط با ما</a>
+                <a href="#">درباره ما</a>
+                <a href="#">روشنایی</a>
+                <a href="#">مبلمان شهری</a>
+                <a href="#">حفاظتی و نظارتی</a>
+                <a href="#">صنعتی و ...</a>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+        var splide = new Splide( '.splide', {
+            type   : 'loop',
+            drag   : 'free',
+            snap   :  true,
+            perPage: 3,
+            focus  : 0,
+            height : "37vh",
+            autoWidth: true,
+            autoplay: true,
+        });
+
+        splide.mount();
+    </script>
+</body>
+</html>

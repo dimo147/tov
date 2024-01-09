@@ -8,6 +8,79 @@ body {
     font-family: 'Vazirmatn', sans-serif;
 }
 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 25px 10px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    direction: rtl;
+}
+
+.dropdown-btn {
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    direction: rtl;
+    background-color: transparent;
+    border: none;
+    padding: 8px 25px 10px 8px;
+    text-align: right;
+    margin-left: auto;
+    display: flex;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    font-size: 36px;
+}
+
+.dropdown-container {
+    display: none;
+    padding-left: 8px;
+}
+
+.dropdown-container a {
+    direction: rtl;
+}
+
+.fa-caret-down {
+    float: left;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.cur {
+    color: white !important;
+    margin-top: 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
 .header {
     display: block;
     position: relative;
@@ -71,6 +144,15 @@ body {
     color: white;
 }
 
+.menu {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    display: none;
+}
 
 nav {
 	text-align: right;
@@ -513,8 +595,90 @@ footer {
     margin-right: 25px;
     margin-left: 25px;
 }
+@media only screen and (max-width: 1280px) {
+    .description {
+        width: 90%;
+    }
+    .topic_contents_1 {
+        margin-right: 5%;
+    }
+    .topic_contents_2 {
+        margin-right: 5%;
+    }
+    .topic_contents_3 {
+        margin-right: 5%;
+    }
+    .topic_contents_4 {
+        margin-right: 5%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .parallax1 {
+        display: none;
+    }
+    .splide_item {
+        display: block;
+        width: 80vw;
+        height: 50vh;
+    }
+    .splide_image {
+        height: 50%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .section1 {
+        display: block;
+        padding-bottom: 40px;
+    }
+    .topic_image {
+        height: 70vh;
+        width: 98vw;
+        object-fit: cover;
+    }
+    .topic_contents_1 {
+        margin-top: 20px;
+        margin-right: 10%;
+    }
+    .description {
+        width: 90%;
+    }
+    .section2 {
+        flex-direction: column-reverse;
+        padding-bottom: 40px;
+    }
+    .topic_contents_2 {
+        margin-top: 20px;
+        margin-right: 10%;
+    }
+    .section3 {
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+    .topic_contents_3 {
+        margin-top: 20px;
+        margin-right: 10%;
+    }
+    .section4 {
+        flex-direction: column-reverse;
+        padding-bottom: 40px;
+    }
+    .topic_contents_4 {
+        margin-top: 20px;
+        margin-right: 10%;
+    }
+    .parallax2 {
+        height: auto !important;
+    }
+    .parallax {
+        height: auto !important;
+    }
+}
 
 @media only screen and (max-width: 500px) {
+    .menu {
+        display: block;
+    }
     .slider_button {
         display: none;
     }
@@ -599,6 +763,7 @@ footer {
         margin-bottom: 0;
     }
     .parallax1 {
+        display: block;
         height: auto !important;
     }
     .parallax2 {
@@ -615,7 +780,7 @@ footer {
         margin: 0;
     }
     .splide_item {
-        height: 250px;
+        height: 50vh;
         width: 90vw;
         margin-right: 25px;
         margin-left: 25px;
@@ -633,5 +798,9 @@ footer {
         margin: 10px 0;
         margin-right: 5px;
         font-size: 20px;
+    }
+    .splide_slider {
+        padding-bottom: 30px;
+        height: auto !important;
     }
 }
