@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Vazirmatn', sans-serif;
+    background: rgb(0,0,0);
+    background: linear-gradient(45deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.8) 50%);
+    height: 100%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 25px 10px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    direction: rtl;
+}
+
+.dropdown-btn {
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    direction: rtl;
+    background-color: transparent;
+    border: none;
+    padding: 8px 25px 10px 8px;
+    text-align: right;
+    margin-left: auto;
+    display: flex;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    font-size: 36px;
+}
+
+.dropdown-container {
+    display: none;
+    padding-left: 8px;
+}
+
+.dropdown-container a {
+    direction: rtl;
+}
+
+.fa-caret-down {
+    float: left;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.cur {
+    color: white !important;
+    margin-top: 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.topnav {
+    position: absolute;
+    width: 94%;
+}
+
+.topnav a {
+    float: right;
+    color: #e0e0e0;
+    text-align: right;
+    padding: 20px 3%;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.ot {
+    padding: 0 3% !important;
+}
+
+.topnav a:hover {
+    color: white;
+}
+
+.topnav a.active {
+    color: white;
+}
+
+.menu {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    display: none;
+}
+
+nav {
+	text-align: right;
+}
+
+nav ul ul {
+	display: none;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul {
+	list-style: none;
+	position: relative;
+	display: inline;
+}
+
+nav ul li {
+    float: right;
+}
+
+nav ul li:hover a {
+    color: #fff;
+}
+
+nav ul li a {
+    display: block;
+    color: #757575;
+    text-decoration: none;
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+		
+nav ul ul {
+    background: #5f6975;
+    padding: 0;
+    position: absolute;
+    margin-top: 40px;
+    top: 100%;
+}
+
+nav ul ul li {
+    float: none; 
+    width: 150px;
+    height: 60px;
+    position: relative;
+}
+
+nav ul ul li a {
+    color: #fff;
+    width: 142px;
+    height: 30px;
+}
+
+nav ul ul li a:hover {
+    background: #4b545f;
+}
+		
+nav ul ul ul {
+    position: absolute;
+    right: 100%;
+    top: 0;
+}
+		
+.hr {
+    position: absolute;
+    top: 60px;
+    right: 6%;
+    width: 88%;
+    z-index: -1;
+}
+
+.logo {
+    padding: 19px 0 !important;
+}
+
+@media only screen and (max-width: 500px) {
+    .menu {
+        display: block;
+    }
+    .logo {
+        display: block !important;
+        margin-left: 10px;
+    }
+    .topnav a {
+        float: left;
+        display: none;
+    }
+}
+
+.mrg {
+    height: 110px;
+}
+
+.item {
+    display: flex;
+    background-color: rgb(25, 25, 25);
+    width: 80vw;
+    margin: auto;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.texts {
+    direction: rtl;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.title {
+    padding-bottom: 0;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.desc {
+    font-size: 20px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.desc1 {
+    font-size: 14px;
+    padding-top: 0;
+    margin-top: 0;
+    display: none;
+}
+
+.item_image {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.link {
+    text-decoration: none;    
+}
+
+@media only screen and (max-width: 1000px) {
+    .title {
+        font-size: 24px;
+    }
+    
+    .desc {
+        font-size: 16px;
+    }
+    .item {
+        width: 88vw;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .title {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .desc {
+        font-size: 14px;
+    }
+    .item_image {
+        height: 180px;
+        width: 180px;
+    }
+    .texts {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .desc {
+        display: none;
+    }
+    .desc1 {
+        display: block;
+    }
+    .item_image {
+        height: 140px;
+        width: 140px;
+    }
+}

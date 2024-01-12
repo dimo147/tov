@@ -81,40 +81,6 @@ body {
     .sidenav a {font-size: 18px;}
 }
 
-.header {
-    display: block;
-    position: relative;
-    height: 100vh;
-    width: 100%;
-}
-
-.background {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    z-index: -1;
-}
-
-.back {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    display: block;
-    object-fit: cover;
-}
-
-.front {
-    /* background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,0.7543122962075455) 0%, rgba(0,0,0,0.39576887884059875) 6%, rgba(0,0,0,0.502211455871411) 40%, rgba(0,0,0,0.7206988508293943) 60%); */
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 70%);
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    display: block;
-}
-
 .topnav {
     overflow: hidden;
     position: absolute;
@@ -220,7 +186,7 @@ nav ul ul ul {
     top: 0;
 }
 		
-hr {
+.hr {
     position: absolute;
     top: 60px;
     right: 6%;
@@ -229,6 +195,55 @@ hr {
 
 .logo {
     padding: 19px 0 !important;
+}
+
+@media only screen and (max-width: 500px) {
+    .menu {
+        display: block;
+    }
+    .logo {
+        display: block !important;
+        margin-left: 10px;
+    }
+    .topnav a {
+        float: left;
+        display: none;
+    }
+}
+
+
+.header {
+    display: block;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.back {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    display: block;
+    object-fit: cover;
+}
+
+.front {
+    /* background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.7543122962075455) 0%, rgba(0,0,0,0.39576887884059875) 6%, rgba(0,0,0,0.502211455871411) 40%, rgba(0,0,0,0.7206988508293943) 60%); */
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 70%);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: block;
 }
 
 .foreground {
@@ -676,9 +691,6 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
-    .menu {
-        display: block;
-    }
     .slider_button {
         display: none;
     }
@@ -693,14 +705,6 @@ footer {
     }
     .front {
         background-color: rgba(0, 0, 0, 0.7);
-    }
-    .topnav a {
-        float: left;
-        display: none;
-    }
-    .logo {
-        display: block !important;
-        margin-left: 10px;
     }
     .action_button {
         margin-top: 60px;
