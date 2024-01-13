@@ -8,6 +8,25 @@ body {
     font-family: 'Vazirmatn', sans-serif;
 }
 
+.call_button {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: rgb(41, 131, 41);
+    position: fixed;
+    color: white;
+    bottom: 25px;
+    right: 25px;
+    text-align: center;
+    margin-top: 35px;
+    z-index: 2;
+    display: none;
+}
+
+.fa-phone {
+    margin-top: 18px;
+}
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -691,6 +710,9 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
+    .call_button {
+        display: block;
+    }
     .slider_button {
         display: none;
     }
